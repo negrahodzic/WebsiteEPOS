@@ -1,4 +1,46 @@
-/*navbar*/
+/*pozadina*/
+body {
+    background-color: rgb(108, 149, 226);
+}
+.glavni_deo{
+    height: 100vh;
+}
+/*planeta*/
+.planeta{
+    margin-top: 25vh;
+    margin-left: 40vh;
+}
+/*button contact*/
+.contact {
+    margin-top: 30px;
+    margin-left: 35px;
+    padding: 15px 25px;
+    height: 50px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: beige;
+    background-color: darkblue;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+    position:absolute;
+    top:0;
+    left:0;  
+}
 
-/*footer itd*/
+.contact:hover {
+    background-color: lightblue;
+}
 
+.contact:active {
+  background-color: blue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*meni*/
+.meni{
+    background-color: yellow;
+}

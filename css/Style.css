@@ -1,15 +1,47 @@
 /*pozadina*/
 body {
-    background-color: rgb(108, 149, 226);
+    background:linear-gradient(#00d2ff,#928dab);
+    /* background: linear-gradient(#c2e59c,#64b3f4); */
+
+    overflow: hidden;
+
 }
-.glavni_deo{
-    height: 100vh;
-}
-/*planeta*/
+
+/* Glavni deo*/
 .planeta{
-    margin-top: 25vh;
-    margin-left: 40vh;
+    position: fixed;
+    top: 30%;
+    left: 29%;
+    transform: translateY(-1%);
 }
+
+.Negra {
+    position: fixed;
+    top: 40%;
+    left: 5%;
+    transform: translateY(-1%);
+    transition: transform .2s; 
+}
+
+.Negra:hover {
+        transform: scale(1.2); 
+    }
+
+.Ivona {
+    position: fixed;
+    top: 40%;
+    left: 63%;
+    transform: translateY(-1%);
+    transition: transform .2s; 
+
+}
+
+.Ivona:hover {
+    transform: scale(1.2); 
+
+}
+
+
 /*button contact*/
 .contact {
     margin-top: 30px;
@@ -17,22 +49,30 @@ body {
     padding: 15px 25px;
     height: 50px;
     font-size: 15px;
-    text-align: center;
-    cursor: pointer;
     outline: none;
-    color: beige;
-    background-color: darkblue;
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 9px #999;
     position:absolute;
     top:0;
-    left:0;  
+    left:0; 
+    color: #777eee;
+    background-color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    z-index: 100;
+    transition: ease-in 0.3s;
+
 }
 
 .contact:hover {
-    background-color: lightblue;
-}
+    display: inline;
+    color: black;
+    background-color: #fff;
+    box-shadow: 0px 10px 14px -3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;}
 
 .contact:active {
   background-color: blue;
@@ -42,5 +82,435 @@ body {
 
 /*meni*/
 .meni{
-    background-color: yellow;
+    margin-top: 15%;
+    position: relative;
+    text-transform: uppercase;    
 }
+.icon-bar a{
+    display: block;
+    text-align:center;
+    padding:10px;
+    color:white;
+    font-size: 15px;
+    text-align: right;
+
+}
+.icon-bar a:hover{
+    widows: 0;
+    color:yellow;
+    text-decoration: none;
+}
+
+/* Shapes*/
+@charset "UTF-8";
+@import url(https://use.fontawesome.com/releases/v5.5.0/css/all.css);
+
+.shapes {
+    position:unset;
+}
+
+@keyframes shape-1 {
+    0% {
+      transform: translate3d(0, 10, 0) rotate(200deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(600deg);
+    }
+  }
+
+.shape-container--1 {
+    animation: shape-1 30s linear infinite;
+  }
+
+.shape-container--1 .fa-paw {
+    color: #DB7093;
+    font-size: 1.6rem; 
+    /*transform: translateZ(-100px);*/
+ }
+  
+@keyframes shape-2 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(252deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 18) rotate(612deg);
+    }
+  }
+.shape-container--2 {
+    animation: shape-2 40s linear infinite;
+  }
+
+.shape-container--2 .fa-spider {
+    color: rgb(173, 219, 112);
+    font-size: 1.2rem;
+}
+  
+@keyframes shape-3 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(153deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(513deg);
+    }
+  }
+  .shape-container--3 {
+    animation: shape-3 42s linear infinite;
+  }
+  .shape-container--3 .fa-atom {
+    color: #FFD700;
+    font-size: 1.8rem;
+  }
+  
+@keyframes shape-4 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(70deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(430deg);
+    }
+  }
+  .shape-container--4 {
+    animation: shape-4 37s linear infinite;
+  }
+  .shape-container--4 .fa-database {
+    color: #C2B7FE;
+    font-size: 1.2rem;
+  }
+  
+  @keyframes shape-5 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(46deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(406deg);
+    }
+  }
+  .shape-container--5 {
+    animation: shape-5 38s linear infinite;
+  }
+  .shape-container--5 .fa-database {
+    color: #FFD700;
+    font-size: 1.6rem;
+  }
+  
+  @keyframes shape-6 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(240deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(600deg);
+    }
+  }
+  .shape-container--6 {
+    animation: shape-6 25s linear infinite;
+  }
+  .shape-container--6 .fa-robot {
+    color: #C2B7FE;
+    font-size: 1.2rem;
+  }
+  
+  @keyframes shape-7 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(113deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(473deg);
+    }
+  }
+  .shape-container--7 {
+    animation: shape-7 20s linear infinite;
+  }
+  .shape-container--7 .fa-code {
+    color: #C2B7FE;
+    font-size: 1.4rem;
+  }
+  
+  @keyframes shape-8 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(88deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(448deg);
+    }
+  }
+  .shape-container--8 {
+    animation: shape-8 35s linear infinite;
+  }
+  .shape-container--8 .fa-laptop-code {
+    color: #95A9FF;
+    font-size: 0.9rem;
+  }
+  
+  @keyframes shape-9 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(323deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(683deg);
+    }
+  }
+  .shape-container--9 {
+    animation: shape-9 23s linear infinite;
+  }
+  .shape-container--9 .fa-keyboard {
+    color: rgb(47, 60, 168);
+    font-size: 1.6rem;
+  }
+  
+  @keyframes shape-10 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(324deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(684deg);
+    }
+  }
+  .shape-container--10 {
+    animation: shape-10 37s linear infinite;
+  }
+  .shape-container--10 .fa-headphones {
+    color: rgb(0, 255, 98);
+    font-size: 1.6rem;
+  }
+  
+  @keyframes shape-11 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(192deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(552deg);
+    }
+  }
+  .shape-container--11 {
+    animation: shape-11 24s linear infinite;
+  }
+  .shape-container--11 .fa-mail {
+    color: #FFF8DC;
+    font-size: 1.2rem;
+  }
+  
+  @keyframes shape-12 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(350deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(710deg);
+    }
+  }
+  .shape-container--12 {
+    animation: shape-12 40s linear infinite;
+  }
+  .shape-container--12 .fa-gem{
+    color: #C2B7FE;
+    font-size: 1.1rem;
+  }
+  
+  @keyframes shape-13 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(198deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(558deg);
+    }
+  }
+  .shape-container--13 {
+    animation: shape-13 31s linear infinite;
+  }
+  .shape-container--13 .fa-codepen {
+    color: rgb(115, 151, 219);
+    font-size: 1.4rem;
+  }
+  
+  @keyframes shape-14 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(164deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(524deg);
+    }
+  }
+  .shape-container--14 {
+    animation: shape-14 24s linear infinite;
+  }
+  .shape-container--14 .fa-file-code{
+    color: rgb(13, 12, 14);
+    font-size: 1.0rem;
+  }
+  
+  @keyframes shape-15 {
+    0% {
+      transform: translate3d(9, 0, 0) rotate(227deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(587deg);
+    }
+  }
+  .shape-container--15 {
+    animation: shape-15 26s linear infinite;
+  }
+  .shape-container--15 .fa-rocket {
+    color: rgb(16, 27, 78);
+    font-size: 0.9rem;
+  }
+  
+  @keyframes shape-16 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(186deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(546deg);
+    }
+  }
+  .shape-container--16 {
+    animation: shape-16 20s linear infinite;
+  }
+  .shape-container--16 .fa-rocket {
+    color: #DB7093;
+    font-size: 1.5rem;
+  }
+  
+  @keyframes shape-17 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(57deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(417deg);
+    }
+  }
+  .shape-container--17 {
+    animation: shape-17 26s linear infinite;
+  }
+  .shape-container--17 .fa-headphones {
+    color: #DB7093;
+    font-size: 0.8rem;
+  }
+  
+  @keyframes shape-18 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(229deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(589deg);
+    }
+  }
+  .shape-container--18 {
+    animation: shape-18 42s linear infinite;
+  }
+  .shape-container--18 .fa-atom {
+    color: rgb(173, 155, 80);
+    font-size: 2rem;
+  }
+  
+  @keyframes shape-19 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(199deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(159deg);
+    }
+  }
+  .shape-container--19 {
+    animation: shape-19 21s linear infinite;
+  }
+  .shape-container--19 .fa-rocket {
+    color: rgb(0, 255, 157);
+    font-size: 1.4rem;
+  }
+  
+  @keyframes shape-20 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(115deg);
+    }
+    100% {
+      transform: translate3d(0, 5, 0) rotate(175deg);
+    }
+  }
+  .shape-container--20 {
+    animation: shape-20 25s linear infinite;
+  }
+  .shape-container--20 .fa-cloud {
+    color: rgb(0, 255, 21);
+    font-size: 1.6rem;
+  }
+  
+  @keyframes shape-21 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(346deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(706deg);
+    }
+  }
+  .shape-container--21 {
+    animation: shape-21 29s linear infinite;
+  }
+  .shape-container--21 .fa-database {
+    color: #FFF8DC;
+    font-size: 0.8rem;
+  }
+  
+  @keyframes shape-22 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(197deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(557deg);
+    }
+  }
+  .shape-container--22 {
+    animation: shape-22 34s linear infinite;
+  }
+  .shape-container--22 .fa-laptop-code {
+    color: rgb(81, 255, 0);
+    font-size: 1.6rem;
+  }
+  
+  @keyframes shape-23 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(357deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(717deg);
+    }
+  }
+  .shape-container--23 {
+    animation: shape-23 27s linear infinite;
+  }
+  .shape-container--23 .fa-file-code {
+    color: rgb(204, 141, 133);
+    font-size: 1.7rem;
+  }
+  
+  @keyframes shape-24 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(163deg);
+    }
+    100% {
+      transform: translate3d(0, 80, 0) rotate(523deg);
+    }
+  }
+  .shape-container--24 {
+    animation: shape-24 31s linear infinite;
+  }
+  .shape-container--24 .fa-robot {
+    color: #95A9FF;
+    font-size: 1.2rem;
+  }
+  
+  
+  @keyframes shape-25 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(145deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(505deg);
+    }
+  }
+  .shape-container--25 {
+    animation: shape-25 25s linear infinite;
+  }
+  .shape-container--25 .fa-code{
+    color: #FFF8DC;
+    font-size: 1.3rem;
+  }
+  

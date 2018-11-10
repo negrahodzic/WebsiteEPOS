@@ -1,6 +1,6 @@
 /*pozadina*/
 body {
-    background:linear-gradient(#00d2ff,#928dab);
+    background:linear-gradient(#00d2ff,#770d5c);
     /* background: linear-gradient(#c2e59c,#64b3f4); */
 
     overflow: hidden;
@@ -406,7 +406,7 @@ body {
       transform: translate3d(0, 0, 0) rotate(199deg);
     }
     100% {
-      transform: translate3d(0, 0, 0) rotate(159deg);
+      transform: translate3d(0, 0, 0) rotate(540deg);
     }
   }
   .shape-container--19 {
@@ -419,10 +419,10 @@ body {
   
   @keyframes shape-20 {
     0% {
-      transform: translate3d(0, 0, 0) rotate(115deg);
+      transform: translate3d(3, 0, 0) rotate(305deg);
     }
     100% {
-      transform: translate3d(0, 5, 0) rotate(175deg);
+      transform: translate3d(0, 0, 0) rotate(305deg);
     }
   }
   .shape-container--20 {

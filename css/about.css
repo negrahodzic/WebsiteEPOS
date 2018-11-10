@@ -1,0 +1,110 @@
+body {
+    background-color: lightblue;
+    /* background: linear-gradient(#c2e59c,#64b3f4); */
+}
+
+/* about meni */
+.navbar{
+    background:rgb(67, 74, 177);
+    opacity: 0.8;
+    height: 50px;
+    width: 100%;
+    top: 0%;
+    position: fixed;
+    z-index: 1;
+}
+
+.about_meni{
+    position: fixed;
+    text-transform: uppercase;    
+    top: 10px;
+    left: 5%;
+}
+
+.icon-bar a{
+    text-align:center;
+    padding:10px;
+    color:white;
+    font-size: 15px;
+    text-align: top;
+
+}
+
+.icon-bar a:hover{
+    widows: 0;
+    color:yellow;
+    text-decoration: none;
+}
+
+/*tekst*/
+.tekst{
+    margin-top: 70px;
+    /* background:rgb(255, 0, 128); */
+    height: 100vh;
+    width: 98vw;
+    height: 70vh;
+    text-align: justify;
+    /* box-shadow: 8px 8px 5px grey; */
+    filter: drop-shadow(0 0 30px #333);
+}
+    /* animation-name: example;
+    animation-duration: 5s;
+}
+@keyframes example {
+    from {background-color: blue;}
+    to {background-color: white);}
+} */
+
+.shaped{
+    height:55vh;
+    width:30vw;
+    float:right;
+    background: black url(../img/coming_soon.png) center top no-repeat;
+    background-size:cover;
+    /* shape-outside: polygon(0 0, 100% 0, 100% 100%, 60% 100%); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%); */
+    shape-outside:     polygon(66.67px 200.00px,133.33px 315.47px,266.67px 315.47px,333.33px 200.00px,201.67px 200.53px,133.33px 84.53px);
+    clip-path:     polygon(66.67px 200.00px,133.33px 315.47px,266.67px 315.47px,333.33px 200.00px,201.67px 200.53px,133.33px 84.53px);
+    shape-margin: 10px;
+    z-index: -1;
+
+}
+.shaped2{
+    float:left;
+    height:55vh;
+    width:20vw;
+    /* background: black url(../img/girl.png) center top no-repeat; */
+    background: none;
+    background-size:cover;
+    /* shape-outside: polygon(0 0, 96% 0, 30% 100%, 0 100%); */
+    shape-outside: url(../img/girl.png);
+    shape-image-threshold: 0.5;
+    clip-path:     polygon(0 0, 100% 0, 30% 100%, 0  100%);
+    shape-margin: 20px;
+}
+
+.floated{
+    float:left;
+    width:150px;
+    height:150px;
+    margin:10px;
+    background-color: black;
+    shape-outside: circle(45% at 50% 50%);
+    clip-path: circle(45% at 50% 50%);
+    shape-margin: 10px;
+
+}
+
+.ivona{
+    background:chartreuse;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.negra{
+    background:rgb(27, 151, 114);
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+

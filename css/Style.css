@@ -1,8 +1,8 @@
 /*pozadina*/
 body {
-    background:linear-gradient(#00d2ff,#770d5c);
+    /* background:linear-gradient(#00d2ff,#770d5c); */
     /* background: linear-gradient(#c2e59c,#64b3f4); */
-
+    background-color: #9cbce5;
     overflow: hidden;
 
 }
@@ -38,7 +38,6 @@ body {
 
 .Ivona:hover {
     transform: scale(1.2); 
-
 }
 
 

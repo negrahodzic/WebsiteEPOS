@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title> Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="css/kontakt.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+</head>
+<body>
+    <div class="izlaz">
+    <a href="index.html"><i class="fa fa-times"></i></a>
+    </div>
+
+    <div class="kontakt-naslov">
+        <h1> Zdravo,</h1>
+        <h3>Kako mozemo da ti pomognemo?</h3>
+    </div>
+
+    <div class="contact-form">
+        <form id="contact-form" method="post" action="">
+            <input name="ime" type="text" class="form-control" placeholder="Vase ime" required><br>
+            <input name="Prezime" type="text" class="form-control" placeholder="Vase prezime" required><br>
+            <input name="email" type="text" class="form-control" placeholder="Vas email" required><br>
+            <textarea name="poruka" class="form-control" placeholder="Vasa poruka" rows="5" required></textarea>   <br>
+           
+        <div class="usloviKoriscenja">
+            <button class="dugmence">Uslovi koriscenja
+            </button>
+            <p>1. Lorem ipsum dolor sit amet, cum et harum accommodare.</p>
+            <p>2. Habeo laoreet ut mea. No euismod conclusionemque vel, congue nostrum iudicabit est id. </p>
+            <p>3. No euismod conclusionemque vel, congue nostrum iudicabit est id.</p>
+            <p>4. Cum et harum accommodare</p>
+           <!-- <p> <input type="checkbox" name="uslovi" required> Prihvatam uslove koriscenja</p> -->
+<p><input name="uslovi" type="checkbox" class="uslovD" required> 
+<b>Prihvatam uslove koriscenja</b></p><br>
+        </div>
+            <input type="submit" class="form-control submit" onclick="potvrda_confirm()" value="Posalji poruku">
+            </form>
+            <script src="js/usloviKoriscenja.js"></script>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/js/potvrda.js"></script>
+</body>
+</html>

@@ -1,10 +1,7 @@
 /*pozadina*/
 body {
-    /* background:linear-gradient(#00d2ff,#770d5c); */
-    /* background: linear-gradient(#c2e59c,#64b3f4); */
-    background-color: #9cbce5;
-    overflow: hidden;
-
+  background-image: linear-gradient(-90deg, purple,violet,skyblue, lightblue);
+  overflow: hidden;
 }
 
 /* Glavni deo*/
@@ -17,7 +14,7 @@ body {
 
 .Negra {
     position: fixed;
-    top: 40%;
+    top: 30%;
     left: 5%;
     transform: translateY(-1%);
     transition: transform .2s; 
@@ -25,11 +22,11 @@ body {
 
 .Negra:hover {
         transform: scale(1.2); 
-    }
+}
 
 .Ivona {
     position: fixed;
-    top: 40%;
+    top: 30%;
     left: 63%;
     transform: translateY(-1%);
     transition: transform .2s; 
@@ -39,7 +36,6 @@ body {
 .Ivona:hover {
     transform: scale(1.2); 
 }
-
 
 /*button contact*/
 .contact {
@@ -63,7 +59,7 @@ body {
     position: relative;
     z-index: 100;
     transition: ease-in 0.3s;
-
+    text-decoration: none
 }
 
 .contact:hover {
@@ -71,7 +67,10 @@ body {
     color: black;
     background-color: #fff;
     box-shadow: 0px 10px 14px -3px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s;}
+    transition: all 0.3s;
+    text-decoration: none
+
+  }
 
 .contact:active {
   background-color: blue;
@@ -96,7 +95,7 @@ body {
 }
 .icon-bar a:hover{
     widows: 0;
-    color:yellow;
+    color:violet;
     text-decoration: none;
 }
 

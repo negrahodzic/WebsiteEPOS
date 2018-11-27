@@ -12,6 +12,10 @@ body {
     transform: translateY(-1%);
 }
 
+.icon-bar-mobilni {
+  display: none;
+}
+
 .Negra {
     position: fixed;
     top: 30%;
@@ -511,3 +515,97 @@ body {
     font-size: 1.3rem;
   }
   
+
+  /* za telefonee */
+  @media screen and (max-width: 531px) {
+    .container { 
+      display: flex; 
+      flex-flow: column; 
+    }
+
+    .icon-bar-mobilni {
+      display: block;
+      top: 0%;
+      right: 0%;
+      transform: translateY(-1%);
+      background: rgb(80, 11, 80);
+      opacity: 0.8;
+      height: 50px;
+      width: 100%;
+      top: 0%;
+      position: fixed;
+      z-index: 1;
+      position: fixed;
+      text-transform: uppercase;   
+      text-align:center;
+ 
+  }
+  
+  .icon-bar-mobilni a{
+      text-align:center;
+      padding:10px;
+      color:white;
+      font-size: 15px;
+      text-align: top;
+  
+  }
+  
+  .icon-bar-mobilni a:hover{
+      widows: 0;
+      color:violet;
+      text-decoration: none;
+  }
+    .icon-bar {
+      display: none;
+    }
+    .planeta { 
+      order: 1;
+      width: 230;
+      height: 230;      
+      /* display: none; */
+      position: fixed;
+      top: 9%;
+      left: 0%;
+      transform: translateY(-1%);
+     }
+    .Negra { 
+      order: 2; 
+      position: fixed;
+      top: 48%;
+      left: 1%;
+      transform: translateY(-1%);
+      transition: transform .2s; 
+     }
+    .Ivona { 
+      order: 3; 
+      position: fixed;
+      top: 48%;
+      left: 40%;
+      transform: translateY(-1%);
+      transition: transform .2s; 
+    }
+
+    .contact {
+      margin-top: 65px;
+      margin-left: 35px;
+      padding: 15px 25px;
+      height: 50px;
+      font-size: 15px;
+      outline: none;
+      border: none;
+      position:absolute;
+      top:0;
+      left:0; 
+      color: #777eee;
+      background-color: rgba(255, 255, 255, 0.75);
+      text-align: center;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      display: block;
+      position: relative;
+      z-index: 100;
+      transition: ease-in 0.3s;
+      text-decoration: none
+  }
+}

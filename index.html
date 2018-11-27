@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">  
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/Style.css">
 
@@ -17,7 +19,13 @@
 <body>
   <div class="container-fluid">
       <div class="row">
-        <div class="col-10">
+          <div class="icon-bar-mobilni">
+              <a href="index.html"> Početna <i class="fa fa-home"></i></a>
+              <a href="about.html">  O nama <i class="fa fa-robot"></i></a>
+              <a href="galerija.html"> Projekti <i class="fa fa-rocket"></i></a>
+              <a href="KontaktStranica.html"> Kontakt <i class="fa fa-address-book"></i></a>
+            </div>
+        <div class="col-md-10 col-sm-9">
           <!-- contact -->
                <a href="contact.html"><button type="button" class="btn btn-primary btn-lg contact">Javi nam se!</button></a>
           <!-- /contact-->
@@ -54,12 +62,12 @@
 
           <!-- Negra-->
           <span title="Ja sam Negra i klikom na mene mozes videti moj CV!">
-          <img src="img/NegraPocetna.png" alt="Negra" class="Negra">
+          <a href="pdf/NegraCV.pdf"><img src="img/NegraPocetna.png" alt="Negra" class="Negra"></a> 
         </span>
           <!-- /Negra-->
 
           <!-- planeta-->
-              <svg viewBox="0 0 150 150" width="330" height="330" class="planeta">
+              <svg viewBox="0 0 150 150" width="320" height="320" class="planeta">
                 <defs>
                   <pattern id="image" patternUnits="userSpaceOnUse" height="160" width="160">
                     <image x="0" y="0" height="160" width="160" xlink:href="img/planetica.jpg"></image>
@@ -79,11 +87,11 @@
 
           <!-- Ivona -->
           <span title="Ja sam Ivona i klikom na mene mozes videti moj CV!">
-          <img src="img/IvonaPocetna.png" alt="Ivona" class="Ivona">
+         <a href="pdf/IvonaCV.pdf"> <img src="img/IvonaPocetna.png" alt="Ivona" class="Ivona"></a>
           </span>
           <!-- /Ivona-->
         </div>      
-        <div class="col-2 meni">
+        <div class="col-md-2 col-sm-3 meni">
           <!-- meni -->
           <div class="icon-bar">
             <a href="index.html"> Početna <i class="fa fa-home"></i></a>
@@ -103,7 +111,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
